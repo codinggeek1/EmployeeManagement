@@ -24,7 +24,7 @@ const Dashboard = () => {
     setNavTitle(() => "Dashboard");
 
     const handleClick = () => {
-        window.location.href = "https://mumbai.polygonscan.com/address/0x995e4619dc114687EB5B3259a0a373E06661217A";
+        window.location.href = "https://mumbai.polygonscan.com/address/0x3A0EB96958201126235Db71686BE8dA7EB89330F";
     }
 
     return (
