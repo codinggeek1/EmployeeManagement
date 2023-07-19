@@ -1,5 +1,59 @@
 [
 	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_employeeAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "_fName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_lName",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_salary",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_vestingPeriod",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_employeeAvatar",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_department",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_performanceScore",
+				"type": "uint256"
+			}
+		],
+		"name": "addEmployee",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
 		"inputs": [],
 		"stateMutability": "nonpayable",
 		"type": "constructor"
@@ -72,6 +126,35 @@
 		"type": "event"
 	},
 	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_idx",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_reason",
+				"type": "string"
+			}
+		],
+		"name": "createMilestones",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
 		"anonymous": false,
 		"inputs": [
 			{
@@ -83,6 +166,19 @@
 		],
 		"name": "DelEmployee",
 		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_index",
+				"type": "uint256"
+			}
+		],
+		"name": "payEmployee",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
 	},
 	{
 		"anonymous": false,
@@ -102,6 +198,26 @@
 		],
 		"name": "Payment",
 		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_idx",
+				"type": "uint256"
+			}
+		],
+		"name": "payMilestone",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "payroll",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
 	},
 	{
 		"anonymous": false,
@@ -125,54 +241,18 @@
 	{
 		"inputs": [
 			{
-				"internalType": "address",
-				"name": "_employeeAddress",
-				"type": "address"
-			},
-			{
-				"internalType": "string",
-				"name": "_fName",
-				"type": "string"
-			},
-			{
-				"internalType": "string",
-				"name": "_lName",
-				"type": "string"
-			},
-			{
 				"internalType": "uint256",
-				"name": "_salary",
+				"name": "_idx",
 				"type": "uint256"
 			},
 			{
 				"internalType": "uint256",
-				"name": "_vestingPeriod",
-				"type": "uint256"
-			},
-			{
-				"internalType": "string",
-				"name": "_employeeAvatar",
-				"type": "string"
-			},
-			{
-				"internalType": "string",
-				"name": "_department",
-				"type": "string"
-			},
-			{
-				"internalType": "uint256",
-				"name": "_performanceScore",
+				"name": "_score",
 				"type": "uint256"
 			}
 		],
-		"name": "addEmployee",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
+		"name": "updatePerformance",
+		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
 	},
@@ -235,35 +315,6 @@
 			}
 		],
 		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "_idx",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
-				"name": "_amount",
-				"type": "uint256"
-			},
-			{
-				"internalType": "string",
-				"name": "_reason",
-				"type": "string"
-			}
-		],
-		"name": "createMilestones",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
@@ -558,39 +609,6 @@
 		"type": "function"
 	},
 	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "_index",
-				"type": "uint256"
-			}
-		],
-		"name": "payEmployee",
-		"outputs": [],
-		"stateMutability": "payable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "_idx",
-				"type": "uint256"
-			}
-		],
-		"name": "payMilestone",
-		"outputs": [],
-		"stateMutability": "payable",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "payroll",
-		"outputs": [],
-		"stateMutability": "payable",
-		"type": "function"
-	},
-	{
 		"inputs": [],
 		"name": "totalBalance",
 		"outputs": [
@@ -645,24 +663,6 @@
 			}
 		],
 		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "_idx",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
-				"name": "_score",
-				"type": "uint256"
-			}
-		],
-		"name": "updatePerformance",
-		"outputs": [],
-		"stateMutability": "nonpayable",
 		"type": "function"
 	}
 ]
