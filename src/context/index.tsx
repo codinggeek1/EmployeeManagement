@@ -9,7 +9,7 @@ const StateContext = createContext({} as any);
 export const StateContextProvider = ({ children }: { children: ReactNode }) => {
     // state logic here
 
-    const { contract, error }: any = useContract("0x3A0EB96958201126235Db71686BE8dA7EB89330F");
+    const { contract, error }: any = useContract("0x9D35dde473e3c967232b7681D3Ad72418fB74740");
     const address = useAddress();
     const connect = useMetamask();
 
