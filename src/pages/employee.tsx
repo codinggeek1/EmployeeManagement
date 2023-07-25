@@ -28,7 +28,7 @@ const EmployeePage = () => {
 
 
     useEffect(() => {
-        document.title = "Employees | ETHforAll";
+        document.title = "SecureChainHR";
         setNavTitle(() => "Employees Details");
     }, [])
 
