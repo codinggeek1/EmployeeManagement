@@ -2,7 +2,7 @@
 
 # SecureChainHR
 
-# Web3Conf Salary Disbursement Project build on Polygon Mumbai Testnet
+# Web3Conf Salary Disbursement Project built on Polygon Mumbai Testnet
 A salary disbursement project on Web3 that handles payment to the employee and takes care of vesting.
 
 ## Contract Deployment
