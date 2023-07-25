@@ -4,7 +4,7 @@ A salary disbursement project on Web3 that handles payment to the employee and t
 ## Contract Deployment
 The contract for the same is deployed at Polygon Mumbai Testnet.
 - Deployment Address: 0x9D35dde473e3c967232b7681D3Ad72418fB74740
-- PolygonScan URL: https://mumbai.polygonscan.com/address/0x995e4619dc114687EB5B3259a0a373E06661217A
+- PolygonScan URL: https://mumbai.polygonscan.com/address/0x9D35dde473e3c967232b7681D3Ad72418fB74740
 - The contract consists of following nonepayable as well as payable functions:
   - addEmployee: NONEPAYABLE
   - getAllEmployees: NONEPAYABLE
