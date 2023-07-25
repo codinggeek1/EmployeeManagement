@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { PolygonLogo } from '../assets';
 import { useDisconnect } from '@thirdweb-dev/react';
+import { useStateContext } from '../context';
 
 import './profile.css';
-
-import { useStateContext } from '../context';
 
 interface DataType {
   personalInformation: {
@@ -88,12 +87,19 @@ const ProfilePage = () => {
 
   console.log(ownerData);
 
+  useEffect(() => {
+    document.title = "Profile | ETHForAll";
+    setNavTitle("View Profile");
+  }, []);
+
+  const disconnect = useDisconnect();
+
   return (
     <div className="profile-container">
       {address ? (
         <div className="ProfileInfo">
           <div className="profile-section-owner">
-            <img src={PolygonLogo} />
+            <img src={PolygonLogo} alt="Logo" />
             <div className="profile-main-container">
               <span className="page-title">Owner Profile</span>
               <div className="info-wrapper">
@@ -133,7 +139,7 @@ const ProfilePage = () => {
         </div>
       ) : (
         <div className="without-profile">
-          <img src={PolygonLogo} />
+          <img src={PolygonLogo} alt="Logo" />
           <span style={{ opacity: '0.3', fontSize: '12px' }}>You have not connected your wallet yet.</span>
           <button className="btn-connect" onClick={() => connect()}>
             Connect
