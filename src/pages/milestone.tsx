@@ -31,7 +31,7 @@ const MilestonePage = () => {
     }
 
     useEffect(() => {
-        document.title = "Milestones | ETHForAll";
+        document.title = "SecureChainHR | Milestones";
     }, [])
     const [milestones, setMilestones] = React.useState([] as any);
     const [isLoading, setIsLoading] = React.useState(false);
