@@ -28,7 +28,7 @@ const EmployeePage = () => {
 
 
     useEffect(() => {
-        document.title = "SecureChainHR";
+        document.title = "SecureChainHR | Employees";
         setNavTitle(() => "Employees Details");
     }, [])
 
