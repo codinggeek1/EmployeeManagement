@@ -18,7 +18,7 @@ const Dashboard = () => {
     let addr = !address ? "0x000...000" : `${address.slice(0, 3)}...${address.slice(-5,)}`;
 
     useEffect(() => {
-        document.title = "Dashboard | EthForAll"
+        document.title = "SecureChainHR"
     }, []);
 
     setNavTitle(() => "Dashboard");
