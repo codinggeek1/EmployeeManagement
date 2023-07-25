@@ -83,7 +83,7 @@ const ProfilePage = () => {
         });
 
     useEffect(() => {
-        document.title = "Profile | ETHForAll";
+        document.title = "SecureChainHR | Profile";
         setNavTitle("View Profile")
     }, [])
     const disconnect = useDisconnect();
