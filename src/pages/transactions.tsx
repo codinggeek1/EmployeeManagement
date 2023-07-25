@@ -22,7 +22,7 @@ const TransactionsPage = () => {
     }
 
     useEffect(() => {
-        document.title = "Transactions | ETHForAll";
+        document.title = "SecureChainHR | Transactions";
     }, [])
 
     return (
