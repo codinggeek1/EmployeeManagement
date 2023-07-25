@@ -1,4 +1,4 @@
-<img align='left' src="https://github.com/codinggeek1/EmployeeManagement/blob/main/Secure.png" width="230"> 
+<img align='left' src="https://github.com/codinggeek1/EmployeeManagement/blob/main/Secure.png" width="500"> 
 # SecureChainHR
 # Web3Conf Salary Disbursement Project build on Polygon Mumbai Testnet
 A salary disbursement project on Web3 that handles payment to the employee and takes care of vesting.
