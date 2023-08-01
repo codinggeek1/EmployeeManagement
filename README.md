@@ -1,4 +1,4 @@
-<img align='left' src="https://github.com/codinggeek1/EmployeeManagement/blob/main/Secure.png" width="500"> 
+<img align='center' src="https://github.com/codinggeek1/EmployeeManagement/blob/main/Secure.png" width="500"> 
 
 # SecureChainHR
 
