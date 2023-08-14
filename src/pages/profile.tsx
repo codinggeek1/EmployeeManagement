@@ -58,16 +58,18 @@ const ProfilePage = () => {
     const disconnect = useDisconnect();
 
     useEffect(() => {
-        const getOwnerDetails = async () => {
-            try {
-                // Fetch the profile information from the imported JSON file
-                setOwnerData(profileInfo);
-            } catch (err) {
-                console.log(err);
+        if (address) {
+            const getOwnerDetails = async () => {
+                try {
+                    // Fetch the profile information from the imported JSON file
+                    setOwnerData(profileInfo);
+                } catch (err) {
+                    console.log(err);
+                }
             }
+            getOwnerDetails();
         }
-        getOwnerDetails();
-    }, []);
+    }, [address]);
 
     return (
         <div className="profile-container">
