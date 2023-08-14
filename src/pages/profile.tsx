@@ -92,7 +92,7 @@ const ProfilePage = () => {
     useEffect(() => {
         const getOwnerDetails = async () => {
             try {
-                const data = await fetch("https://bafybeifvzmrqbr64fb5djfxli5rfaylkb2bj3dti3azr7mqr245lcg4sze.ipfs.w3s.link/new.json");
+                const data = await fetch("profileinfo.json");
                 const owner = await data.json();
                 console.log(owner.personalInformation.walletAddress)
                 setOwnerData(() => owner);
