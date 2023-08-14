@@ -5,7 +5,7 @@ import "./profile.css";
 import { useStateContext } from '../context';
 
 // Import the profile information JSON file
-import profileInfo from 'src/pages/profileinfo.json'; // Adjust the path if needed
+import profileInfo from './profileinfo.json'; // Adjust the path if needed
 
 interface DataType {
     personalInformation: {
